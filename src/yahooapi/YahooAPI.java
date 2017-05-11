@@ -34,6 +34,12 @@ public class YahooAPI {
     private ArrayList<Double> closes;
     private ArrayList<Integer> volumes;
     private ArrayList<Double> adjCloses;
+    
+    protected static void uploadHistory(String d, String o, String h,String l,String c,String v,String a){
+        String qry = "INSERT INTO final(dates,opens,highs,lows,close,volumes,adjCloses)"
+                + "VALUES("+d+","+o+","+h+","+l+","+c+","+v+","+a+");";
+        Utils.execQuery(qry);
+    }
   
     public YahooAPI(String symbol){
         dates = new ArrayList<GregorianCalendar>();
