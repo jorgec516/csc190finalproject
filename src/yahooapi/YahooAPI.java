@@ -12,6 +12,7 @@ import java.net.URLConnection;
 import java.util.Scanner;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 /**
  *
  * @author JorgeContreras
@@ -46,19 +47,25 @@ public class YahooAPI {
         
        
       //url to get all stock history given ticket ID
-        //String url = "https://ichart.yahoo.com/table.csv?s=" + symbol;//this will get all stock data history given stock symbol
-         String url = "https://ichart.yahoo.com/table.csv?s=GOOG";//testing 
+         String url = "https://ichart.yahoo.com/table.csv?s="+symbol;//this will get all stock data history given stock symbol 
           System.out.println(url);//testing
                 try{
                     URL yahoofinance = new URL(url);
                     URLConnection data = yahoofinance.openConnection();
                      InputStreamReader input = new InputStreamReader(data.getInputStream());
                     BufferedReader bufferedReader = new BufferedReader(input);
+                    //bufferedReader.readline();
                     String line;
-                    
+                    int i=0;
                     while ((line = bufferedReader.readLine()) != null) {
-                        System.out.println(line);
-                        //ALEX job parse file for commas to call my function to input it in database
+                        if(i>0){
+                            String[] lineparts = line.split(",");
+                            
+                            System.out.println(Arrays.toString(lineparts));
+                        }
+                        else{
+                            i+=1;
+                        }//ALEX job parse file for commas to call my function to input it in database
                     }
                     bufferedReader.close();
                     input.close();
