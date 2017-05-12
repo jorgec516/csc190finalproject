@@ -1,5 +1,5 @@
 # To run it:
-# mysql -u root -p < menu.sql
+# mysql -u root -p < final.sql
 # enter pwd: goodyear123!@#
 
 DROP DATABASE IF EXISTS final;

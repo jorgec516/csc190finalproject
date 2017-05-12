@@ -31,7 +31,7 @@ import java.util.Base64;
 public class Utils {
 
     static final String DRIVER = "com.mysql.jdbc.Driver";
-    static final String URL = "jdbc:mysql://localhost/menu_db";
+    static final String URL = "jdbc:mysql://localhost/final";
     static final String USER = "root";
     static final String PASS = "goodyear123!@#";
 
