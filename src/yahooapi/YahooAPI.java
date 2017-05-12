@@ -55,7 +55,7 @@ public class YahooAPI {
        
       //url to get all stock history given ticket ID
          String url = "https://ichart.yahoo.com/table.csv?s="+symbol;//this will get all stock data history given stock symbol 
-          System.out.println(url);//testing
+          //System.out.println(url);//prints piced stock url
                 try{
                     URL yahoofinance = new URL(url);
                     URLConnection data = yahoofinance.openConnection();
@@ -74,7 +74,7 @@ public class YahooAPI {
                             closes.add(lineparts[4]);
                             volumes.add(lineparts[5]);
                             adjCloses.add(lineparts[6]);
-                            System.out.println(Arrays.toString(lineparts));
+                            //System.out.println(Arrays.toString(lineparts));//Uncomment to see lines represnted as array
                         }
                         else{
                             i+=1;
@@ -82,7 +82,18 @@ public class YahooAPI {
                     }
                     bufferedReader.close();
                     input.close();
-                   
+                    for (int x=0; x<dates.size();x++){
+                        String date = new String(dates.get(x));
+                        String open = new String(opens.get(x));
+                        String high = new String(highs.get(x));
+                        String low = new String(lows.get(x));
+                        String close = new String(closes.get(x));
+                        String volume = new String(volumes.get(x));
+                        String adj = new String(adjCloses.get(x));
+                        uploadHistory(date,open,high,low,close,volume,adj);
+                        //System.out.println(date+" "+open+" "+high+" "+low+" "+close+" "+volume+" "+adj); //Uncomment to see whats being parsed into upoadhistory 
+                    }
+                    
                         
                 }
                 catch(Exception e){
