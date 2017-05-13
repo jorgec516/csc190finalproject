@@ -97,7 +97,7 @@ public class YahooAPI {
                         String volume = new String(volumes.get(x));
                         String adj = new String(adjCloses.get(x));
                         uploadHistory(date,open,high,low,close,volume,adj);
-                        //System.out.println(date+" "+open+" "+high+" "+low+" "+close+" "+volume+" "+adj); //Uncomment to see whats being parsed into upoadhistory 
+                        System.out.println(date+" "+open+" "+high+" "+low+" "+close+" "+volume+" "+adj); //Uncomment to see whats being parsed into upoadhistory 
                     }
                     
                         
