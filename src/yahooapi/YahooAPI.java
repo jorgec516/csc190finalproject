@@ -13,6 +13,8 @@ import java.util.Scanner;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.sql.*;
+import java.util.Calendar;
 /**
  *
  * @author JorgeContreras
@@ -37,10 +39,14 @@ public class YahooAPI {
     private ArrayList<String> volumes;
     private ArrayList<String> adjCloses;
     
+    
     protected static void uploadHistory(String d, String o, String h,String l,String c,String v,String a){
-        String qry = "INSERT INTO final(dates,opens,highs,lows,close,volumes,adjCloses)"
-                + "VALUES("+d+","+o+","+h+","+l+","+c+","+v+","+a+");";
-        Utils.execQuery(qry);
+        String qry = "INSERT INTO stockHistory(dates,opens,highs,lows,closes,volumes,adjClose)"+ "VALUES("+d+","+o+","+h+","+l+","+c+","+v+","+a+")";
+        //System.out.println(qry);
+        Utils.execNonQuery(qry);
+        
+        
+       
     }
   
     public YahooAPI(String symbol){
