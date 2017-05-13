@@ -15,6 +15,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.sql.*;
 import java.util.Calendar;
+import java.sql.*;
 /**
  *
  * @author JorgeContreras
@@ -28,8 +29,8 @@ public class YahooAPI {
     public static final int HIGH = 2;
     public static final int LOW = 3;
     public static final int CLOSE = 4;
-    public static final int ADJCLOSE = 5;
-    public static final int VOLUME = 6;
+    public static final int ADJCLOSE = 6;
+    public static final int VOLUME = 5;
     
     private ArrayList<String> dates;
     private ArrayList<String> opens;
@@ -41,9 +42,32 @@ public class YahooAPI {
     
     
     protected static void uploadHistory(String d, String o, String h,String l,String c,String v,String a){
-        String qry = "INSERT INTO stockHistory(dates,opens,highs,lows,closes,volumes,adjClose)"+ "VALUES("+d+","+o+","+h+","+l+","+c+","+v+","+a+")";
+        try{
+            String myDriver = "org.gjt.mm.mysql.Driver";
+            String myUrl = "jdbc:mysql://localhost/final";
+            Class.forName(myDriver);
+            Connection conn = DriverManager.getConnection(myUrl, "root", "goodyear123!@#");
+            
+            String query = "insert into stockHistory (dates,opens,highs,lows,closes,volumes,adjClose)"+" values (?,?,?,?,?,?,?)";
+            PreparedStatement preparedStmt = conn.prepareStatement(query);
+            preparedStmt.setString(1, d);
+            preparedStmt.setString(2, o);
+            preparedStmt.setString(3, h);
+            preparedStmt.setString(4, l);
+            preparedStmt.setString(5, c);
+            preparedStmt.setString(6, v);
+            preparedStmt.setString(7, a);
+            
+            preparedStmt.execute();
+            conn.close();
+        }
+        catch (Exception e){
+            System.err.println("Got an exception");
+            System.err.println(e.getMessage());
+        }
+        //String qry = "INSERT INTO stockHistory(dates,opens,highs,lows,closes,volumes,adjClose)"+ "VALUES("+d+","+o+","+h+","+l+","+c+","+v+","+a+")";
         //System.out.println(qry);
-        Utils.execNonQuery(qry);
+        //Utils.execNonQuery(qry);
         
         
        
