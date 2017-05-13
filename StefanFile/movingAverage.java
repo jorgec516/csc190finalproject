@@ -58,3 +58,7 @@ public implementation(average){
 			array[array.length-1]=num;
 		return array;
 	}
+
+
+
+//TEST
