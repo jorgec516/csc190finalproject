@@ -31,6 +31,7 @@ public class stocks {
     public static void main(String[] args) {
         // TODO code application logic here
         //System.out.println("Enter stock ticker: ");
+<<<<<<< HEAD
         String stockTicker = args[0];           //ONCE '/home/csc190/Desktop/Vividh.java' 2016-01-10 2017-05-10
         String strategyFile = args[1];
         String startDate = args[2];
@@ -52,6 +53,13 @@ public class stocks {
                 
                 
                 String query = "SELECT * FROM stockHistory where dates>'"+startDate+"'AND dates<'"+endDate+"' order by dates;";
+=======
+        String stockTicker = args[0];
+        YahooAPI run = new YahooAPI(stockTicker);//input is the stock ticker in order to download
+       //YahooAPI run = new YahooAPI("GOOG");//test
+    }
+}//end stocks
+>>>>>>> 77ccbd0c3c19ee239da48c2ba36b50ff81d536ee
 
 
                 Statement st = conn.createStatement();

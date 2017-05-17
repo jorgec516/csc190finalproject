@@ -11,8 +11,16 @@ import java.util.Arrays;
 import java.sql.*;
 import java.util.Calendar;
 import java.sql.*;
+<<<<<<< HEAD
 
 
+=======
+/**
+ *
+ * @author JorgeContreras
+ * @coauthor AlexSpeicher
+ */
+>>>>>>> 77ccbd0c3c19ee239da48c2ba36b50ff81d536ee
 public class YahooAPI {
 //these variables diclose will hold information retreived form yahoo api so once downloaded
     //we dont need an internet connection
