@@ -21,11 +21,10 @@ public class stocks {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        //args[0]
-        
-        //take input parameters from command line ALEX job
-        YahooAPI run = new YahooAPI("GOOG");//input is the stock ticker in order to download
-       
+        //System.out.println("Enter stock ticker: ");
+        String stockTicker = args[0];
+        YahooAPI run = new YahooAPI(stockTicker);//input is the stock ticker in order to download
+       //YahooAPI run = new YahooAPI("GOOG");//test
     }
 }//end stocks
 
