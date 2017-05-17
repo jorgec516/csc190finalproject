@@ -18,6 +18,7 @@ import java.util.Arrays;
  * @author JorgeContreras
  * @coauthor AlexSpeicher
  */
+
 public class YahooAPI {
 //these variables diclose will hold information retreived form yahoo api so once downloaded
     //we dont need an internet connection
@@ -90,8 +91,8 @@ public class YahooAPI {
                         String close = new String(closes.get(x));
                         String volume = new String(volumes.get(x));
                         String adj = new String(adjCloses.get(x));
-                        uploadHistory(date,open,high,low,close,volume,adj);
-                        //System.out.println(date+" "+open+" "+high+" "+low+" "+close+" "+volume+" "+adj); //Uncomment to see whats being parsed into upoadhistory 
+                       // uploadHistory(date,open,high,low,close,volume,adj);
+                        System.out.println(date+" "+open+" "+high+" "+low+" "+close+" "+volume+" "+adj); //Uncomment to see whats being parsed into upoadhistory 
                     }
                     
                         
