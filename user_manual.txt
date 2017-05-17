@@ -33,25 +33,37 @@ Introduction
  
 What is Invest Backtest and how do I use it?
  
-Invest Backtest is an API that retrieves stock information from Yahoo stocks and that can load Java source programs. The API will run those Java programs dynamically without the need to recompile in an effort to create a successful trading strategy. The program is self-contained in the terminal. 
+Invest Backtest is an API that retrieves stock information from Yahoo 
+stocks and that can load Java source programs. The API will run 
+those Java programs dynamically without the need to recompile in an 
+effort to create a successful trading strategy. The program is 
+self-contained in the terminal. 
 
 ================================================================================
 
 Getting Started
  
-In preparation for executing the program there are a few preconditions the user must consider. These conditions are the following:
+In preparation for executing the program there are a few 
+preconditions the user must consider. These conditions are 
+the following:
  
 1. The user needs to have a basic knowledge of Linux command line.
  
-2. The user’s storage space and memory should be adequate enough to store all of the stock data and run the program at an acceptable speed.
+2. The user’s storage space and memory should be adequate enough to 
+store all of the stock data and run the program at an acceptable speed.
  
-3. The user must create a java file that implements the type of trading strategy they want to use.
+3. The user must create a java file that implements the 
+type of trading strategy they want to use.
 
 ================================================================================
  
 Running the Program
  
-For the easiest use of this program, be sure to first read the ‘Getting Started’ portion of the manual. The section contains necessary setup information for the application of Backtest. The following are the steps to operate the program once it is downloaded on the user’s computer:
+For the easiest use of this program, be sure to first read 
+the ‘Getting Started’ portion of the manual. The section contains 
+necessary setup information for the application of Backtest. 
+The following are the steps to operate the program once it is 
+downloaded on the user’s computer:
 
 ================================================================================
  
@@ -59,35 +71,56 @@ Opening the Backtester
  
 1. Open the computer’s terminal.
  
-2. Running the back tester. In the terminal, type the command “./run_Backtester”. This will cause the program to begin running.
+2. Running the back tester. In the terminal, type the 
+command “./run_Backtester”. This will cause the program to begin running.
 
 Upload Trading Algorithm
  
-3. Uploading a program. Still in the terminal, type the command “./upload_run trader.java 01/01/1980 01/01/1990". This command allows a user to upload their java file (as mentioned in ‘Getting Started’) while providing the system a date range to back test (the date range can be specified by the user; the above is an example).
+3. Uploading a program. Still in the terminal, type the 
+command “./upload_run trader.java 01/01/1980 01/01/1990". 
+This command allows a user to upload their java file 
+(as mentioned in ‘Getting Started’) while providing the 
+system a date range to back test (the date range can 
+be specified by the user; the above is an example).
  
 Run the Backtester
  
-4. Run the back tester. The user will enter the command “test” in the command line which will find the history of a given stock in a specified date range. The system will do all calculations and output the result.
+4. Run the back tester. The user will enter the command “test” 
+in the command line which will find the history of 
+a given stock in a specified date range. The system will do 
+all calculations and output the result.
 
 ================================================================================
  
 Additional User Functions
  
-The following section is for the process of automatically extracting up-to-date data from the Yahoo API. In the command line, the user will enter the command “download_data”. The system will then extract all the data from Yahoo and store it in a data set.
+The following section is for the process of automatically 
+extracting up-to-date data from the Yahoo API. In the 
+command line, the user will enter the command “download_data”. 
+The system will then extract all the data from 
+Yahoo and store it in a data set.
 
 ================================================================================
  
 Command References
  
-- “backtester reference”: this command will output a user manual for the user to study.
+- “backtester reference”: this command will output a user manual 
+for the user to study.
  
-- “./run_Backtester”: this command will begin the running of the Backtester program.
+- “./run_Backtester”: this command will begin the running 
+of the Backtester program.
  
-- “./upload_run trader.java 01/01/1980 01/01/1990”: this command will let the system know which date range is being used, and begin to backtest the user’s algorithm.
+- “./upload_run trader.java 01/01/1980 01/01/1990”: this command 
+will let the system know which date range is being 
+used, and begin to backtest the user’s algorithm.
  
-- “Download_data”: this command will allow a user to extract all data from Yahoo finance and automatically save it in the local data store.
+- “Download_data”: this command will allow a user to extract 
+all data from Yahoo finance and automatically save it 
+in the local data store.
  
-- “test”: this command will find a history of a given stock in a specified date range. The system completes the calculations and outputs a result.  
+- “test”: this command will find a history of a given stock 
+in a specified date range. The system completes the 
+calculations and outputs a result.  
 
 ================================================================================
  
