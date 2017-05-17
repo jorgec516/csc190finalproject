@@ -7,7 +7,7 @@ CREATE DATABASE final;
 USE final;
 CREATE TABLE stockHistory(
 	id INT AUTO_INCREMENT PRIMARY KEY,
-	dates VARCHAR(255),
+	dates DATE,
 	opens VARCHAR(255),
 	highs VARCHAR(255),
 	lows VARCHAR(255),
