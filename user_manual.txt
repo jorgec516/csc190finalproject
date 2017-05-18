@@ -101,11 +101,6 @@ recover the package:
 1. Click the download link and extract the program files from the 
 ZIP file they are compiled into. 
 
-2. In the terminal type the command “git clone 
-https://github.com/jorgec516/csc190finalproject.git”. This command 
-will copy all of the files from the provided URL and store them 
-locally on the user’s device.
-
 =================================================================================
 
 Getting Started
@@ -193,10 +188,6 @@ local data store.
 - “test”: this command will find a history of a given stock 
 in a specified date range. The system completes the calculations 
 and outputs a result.  
-
-- “git clone”: this command is used to clone the Backtest package 
-from “https://github.com/jorgec516/csc190finalproject”. This will 
-copy all of the necessary files and store them locally on the user’s device.
 
 ================================================================================
 
