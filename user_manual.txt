@@ -113,7 +113,8 @@ Getting Started
 In preparation for executing the program there are a few 
 preconditions the user must consider. These conditions are the following:
 
-1. The user must first have the program installed on their device.
+1. The user must first have the program files stored locally 
+on their device.
  
 2. The user needs to have a basic knowledge of Linux 
 command line.
