@@ -1,11 +1,12 @@
-INVEST BACKTEST USER MANUAL - by Jesse Petrucci, Steven Premus, Alex Speicher, 
-		Jorge Contreras, Stefan Bozic, Vividh Talwar
+			    INVEST BACKTEST USER MANUAL 
+		  by Jesse Petrucci, Steven Premus, Alex Speicher, 
+		    Jorge Contreras, Stefan Bozic, Vividh Talwar
  
-			Last change: 2017 May 13
+			     Last change: 2017 May 18
  
  
-              		   Table of Contents             	
-								   *user_manual*
+              		         Table of Contents             	
+								      *user_manual*
  
 ===============================================================================
 Contents
@@ -13,6 +14,7 @@ Contents
 Copyright......................................................................1
 Introduction...................................................................1
     	What is Backtest?......................................................1
+Installation...................................................................1
 Getting Started................................................................1
 Running the Program............................................................1
     	Open the Backtester....................................................1
@@ -20,7 +22,7 @@ Running the Program............................................................1
 Run the Backtester.............................................................2
 Additional User Interfaces.....................................................2
 Command References.............................................................2
- 
+Uninstall......................................................................3 
    
   
   
@@ -50,23 +52,48 @@ Invest Backtest is an API that retrieves stock information
 from Yahoo stocks and that can load Java source programs. The 
 API will run those Java programs dynamically without the 
 need to recompile in an effort to create a successful 
-trading strategy. The program is self-contained in the terminal. 
+trading strategy. The API runs user-created Java programs and 
+applies them to the data received from Yahoo stocks. The data 
+is specified by the user and the results are returned. The 
+program is self-contained in the terminal. 
 
 ================================================================================
+
+Installation
+
+There is no installation necessary! Since the entire program is 
+self-contained in the terminal, all that is needed is the package 
+of Invest Backtest files. The package of files can found at 
+“https://github.com/jorgec516/csc190finalproject”. Once the user 
+has arrived at this link, one of the following is necessary to 
+recover the package:
+
+1. Click the download link and extract the program files from the 
+ZIP file they are compiled into. 
+
+2. In the terminal type the command “git clone 
+https://github.com/jorgec516/csc190finalproject.git”. This command 
+will copy all of the files from the provided URL and store them 
+locally on the user’s device.
+
+
+=================================================================================
 
 Getting Started
  
 In preparation for executing the program there are a few 
 preconditions the user must consider. These conditions are the following:
+
+1. The user must first have the program installed on their device.
  
-1. The user needs to have a basic knowledge of Linux 
+2. The user needs to have a basic knowledge of Linux 
 command line.
  
-2. The user’s storage space and memory should be adequate 
+3. The user’s storage space and memory should be adequate 
 enough to store all of the stock data and run the program 
 at an acceptable speed.
  
-3. The user must create a java file that implements the 
+4. The user must create a java file that implements the 
 type of trading strategy they want to use.
 
 ================================================================================
@@ -137,6 +164,26 @@ local data store.
 in a specified date range. The system completes the calculations 
 and outputs a result.  
 
+- “git clone”: this command is used to clone the Backtest package 
+from “https://github.com/jorgec516/csc190finalproject”. This will 
+copy all of the necessary files and store them locally on the user’s device.
+
 ================================================================================
- 
+
+Uninstall
+
+In the unlikely event you want to uninstall Invest Backtest completely, 
+this is how you do it. The user will be happy to know, since there is no installation, there is also no uninstalling necessary! To “uninstall” this 
+program simply delete (move to trash) all of the package files that were 
+downloaded in the first place. This will remove the Invest Backtest files 
+from the user’s device and it will not longer be able to be used.
+
+================================================================================ 
+
+
+
+
+
+
+
 
