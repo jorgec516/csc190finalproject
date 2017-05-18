@@ -172,18 +172,13 @@ copy all of the necessary files and store them locally on the user’s device.
 
 Uninstall
 
-In the unlikely event you want to uninstall Invest Backtest completely, 
-this is how you do it. The user will be happy to know, since there is no installation, there is also no uninstalling necessary! To “uninstall” this 
-program simply delete (move to trash) all of the package files that were 
-downloaded in the first place. This will remove the Invest Backtest files 
-from the user’s device and it will not longer be able to be used.
+In the unlikely event you want to uninstall Invest Backtest 
+completely, this is how you do it. The user will be happy to 
+know, since there is no installation, there is also no 
+uninstalling necessary! To “uninstall” this program simply 
+delete (move to trash) all of the package files that were 
+downloaded in the first place. This will remove the Invest 
+Backtest files from the user’s device and it will not longer 
+be able to be used.
 
 ================================================================================ 
-
-
-
-
-
-
-
-
