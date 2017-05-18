@@ -1,6 +1,12 @@
-			    INVEST BACKTEST USER MANUAL 
-		  by Jesse Petrucci, Steven Premus, Alex Speicher, 
-		    Jorge Contreras, Stefan Bozic, Vividh Talwar
+			    
+			   INVEST BACKTEST USER MANUAL 
+		  		
+				   Jesse Petrucci 
+				   Steven Premus 
+				   Alex Speicher 
+		    	  	   Jorge Contreras
+				   Stefan Bozic 
+				   Vividh Talwar
  
 			     Last change: 2017 May 18
  
@@ -14,6 +20,9 @@ Contents
 Copyright......................................................................1
 Introduction...................................................................1
     	What is Backtest?......................................................1
+System Requirements............................................................1
+	Operating Systems......................................................1
+	Recommended Minimum Hardware...........................................1
 Installation...................................................................1
 Getting Started................................................................1
 Running the Program............................................................1
@@ -21,13 +30,12 @@ Running the Program............................................................1
     	Upload Trading Algorithm...............................................2
 Run the Backtester.............................................................2
 Additional User Interfaces.....................................................2
-Command References.............................................................2
+Command References.............................................................3 
 Uninstall......................................................................3 
    
   
   
   
- 
 ================================================================================ 
  
 Copyright                                       		 *manual-copyright*
@@ -59,6 +67,28 @@ program is self-contained in the terminal.
 
 ================================================================================
 
+System Requirements:
+
+Operating Systems:
+ 
+macOSX
+Windows XP
+Windows Vista
+Windows 7(32-bit & 64-bit)
+Windows 8
+Windows 10
+Unix 
+Linux
+
+Recommended Minimum Hardware:
+
+- 1.3GHz or faster processor.
+- 512MB RAM (Recommended: 1GB or greater).
+- 1G of available hard drive space (for the download of 
+  the package files).
+
+=================================================================================
+
 Installation
 
 There is no installation necessary! Since the entire program is 
@@ -76,7 +106,6 @@ https://github.com/jorgec516/csc190finalproject.git”. This command
 will copy all of the files from the provided URL and store them 
 locally on the user’s device.
 
-
 =================================================================================
 
 Getting Started
@@ -89,9 +118,9 @@ preconditions the user must consider. These conditions are the following:
 2. The user needs to have a basic knowledge of Linux 
 command line.
  
-3. The user’s storage space and memory should be adequate 
-enough to store all of the stock data and run the program 
-at an acceptable speed.
+3. The user’s storage space and memory should meet the 
+aforementioned requirements to store all of the stock data and 
+run the program at an acceptable speed.
  
 4. The user must create a java file that implements the 
 type of trading strategy they want to use.
