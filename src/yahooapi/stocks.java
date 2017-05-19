@@ -39,6 +39,9 @@ public class stocks {
         
         YahooAPI run = new YahooAPI(stockTicker);//input is the stock ticker in order to download
        //YahooAPI run = new YahooAPI("GOOG");//test
+       //YahooAPI run;
+       //
+       //
     //}	
                 
                 try{
